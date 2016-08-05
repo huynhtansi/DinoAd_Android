@@ -9,6 +9,11 @@
     <string name="login">Login</string>
     <string name="sign_up">Sign Up</string>
     <string name="sign_in">Sign In</string>
+    <string name="input_username">Please input username</string>
+    <string name="input_password">Please input password</string>
+    <string name="input_retype">Please input retype password</string>
+    <string name="retype_not_match">Retype password not match</string>
+    <string name="wrong_username_password">Wrong username or password</string>
 
     <string name="username_hint">Username</string>
     <string name="password_hint">Password</string>
@@ -19,10 +24,64 @@
     <string name="btn_register">Register</string>
     <string name="txt_via">Or Via</string>
 
+    // HomeContainerFragment
     <string name="tab_home">Home</string>
     <string name="tab_tickets">Tickets</string>
     <string name="tab_gifts">Gifts</string>
     <string name="tab_settings">Settings</string>
+
+    <string name="see_balance">See Balance ></string>
+    <string name="coupon_box">Coupon Box</string>
+    <string name="invite_friends">Invite Friends</string>
+    <string name="banner_invite_friends">Invite friends \n&amp; get reward point</string>
+
+    <string name="no_internet_connection">No Internet Connection</string>
+
+    // PointDetailFragment
+    <string name="points_detail">Points Detail</string>
+    <string name="balance">Balance</string>
+    <string name="total_points">Total Points</string>
+    <string name="promotion_points">Promotion points</string>
+    <string name="display_points">Display points</string>
+    <string name="install_points">Install points</string>
+    <string name="point_history_available_day">Point history is available for 14 days</string>
+    <string name="install_and_run_points">Install and Run points</string>
+    <string name="video_points">Video points</string>
+    <string name="event_points">Event points</string>
+    <string name="used_points">Used points</string>
+    <string name="affiliate_points">Affiliate Video</string>
+    <string name="recommendee_points">Recommendee point</string>
+    <string name="recommender_points">Recommender point</string>
+    <string name="signup_point">Signup point</string>
+    <string name="event_point">Event point</string>
+
+    // SettingFragment
+    <string name="active_lock_screen">Activate LockScreen</string>
+    <string name="notify_rewards">Notify rewards</string>
+    <string name="my_info">My Info</string>
+    <string name="notice">Notice</string>
+    <string name="faq">FAQ</string>
+    <string name="tutorial">Tutorial</string>
+    <string name="customer_service">Customer Service</string>
+    <string name="partnership_inquiry">Partnership Inquiry</string>
+    <string name="terms_and_conditions">Terms and Conditions</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="delete_account">Delete Account</string>
+
+    <string name="voucher">Voucher</string>
+    <string name="prepaid_card">Prepaid Card</string>
+    <string name="game_card">Game Card</string>
+    <string name="end_date">End date : </string>
+    <string name="coupon_count">You have %d coupons.</string>
+
+    <string name="inactive_lock_screen_question">Inactive lockscreen?</string>
+    <string-array name="inactive_lock_screen">
+        <item>Inactive for 2 hours</item>
+        <item>Inactive for 4 hours</item>
+        <item>Inactive for 8 hours</item>
+        <item>Inactive for a day</item>
+        <item>I will turn on later</item>
+    </string-array>
 
     <string name="large_text">
         "Material is the metaphor.\n\n"
@@ -113,4 +172,7 @@
         "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
         "when a user tries to pick up one of cards.\n\n"
     </string>
+
+
+    <string name="server_client_id">768403305833-3pg3hc3ek1maqemkmkoofefguvogn3oe.apps.googleusercontent.com</string>
 </resources>

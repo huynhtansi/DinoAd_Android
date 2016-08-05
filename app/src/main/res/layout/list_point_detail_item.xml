@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/default_margin_normal"
+    android:paddingRight="@dimen/default_margin_normal"
+    android:paddingTop="24dp"
+    android:paddingBottom="24dp">
+    <TextView
+        android:id="@+id/textPointDetailTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total points"
+        android:textSize="@dimen/font_size_large"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textPointDetailPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/font_size_large"
+            android:text="7010 đ"/>
+
+        <ImageView
+            android:id="@+id/ivGroupIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tint="@color/colorAccent"
+            android:src="@drawable/ic_arrow_drop_down"/>
+    </LinearLayout>
+
+</RelativeLayout>

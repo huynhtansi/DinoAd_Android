@@ -1,0 +1,39 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="vn.dinosys.dinoad.ui.fragment.InviteFriendFragment">
+
+    <include layout="@layout/toolbar"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="#EEEEEE">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/banner_invite_friends"
+            android:textSize="@dimen/font_size_large"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvInviteFriends"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/default_margin_normal"
+            android:layout_centerInParent="true"
+            android:overScrollMode="never"
+            app:layoutManager="android.support.v7.widget.GridLayoutManager"
+            app:spanCount="3"/>
+
+    </RelativeLayout>
+</LinearLayout>

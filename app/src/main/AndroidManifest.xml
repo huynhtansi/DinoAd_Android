@@ -3,6 +3,7 @@
           xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
     <application
         android:name=".app.DinoAdApplication"
@@ -11,34 +12,50 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
 
-        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <provider android:authorities="com.facebook.app.FacebookContentProvider915809498565263"
+                  android:name="com.facebook.FacebookContentProvider"
+                  android:exported="true"/>
 
-        <activity android:name=".ui.activity.login.LoginActivity"
-                  android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.activity.login.LoginActivity"
+            android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-
-        <activity android:name=".ui.activity.home.HomeActivity"
+        <activity
+            android:name=".ui.activity.home.HomeActivity"
             android:theme="@style/HomeTheme"/>
-
-        <activity android:name=".ui.activity.lockscreen.LockScreenActivity"
+        <activity
+            android:name=".ui.activity.gift.GiftDetailActivity"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".ui.activity.lockscreen.LockScreenActivity"
             android:theme="@style/LockScreenTheme">
             <intent-filter>
                 <action android:name="android.intent.action.LOCK_SCREEN_ACTION"/>
+
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.HOME"/>
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ui.activity.lockscreen.YoutubePlayerActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="nosensor"
+            android:theme="@style/YoutubePlayerActivity"/>
 
-        <activity android:name=".ui.activity.lockscreen.YoutubePlayerActivity"
-                  android:theme="@style/YoutubePlayerActivity"
-                  android:screenOrientation="nosensor"
-                  android:configChanges="orientation|screenSize|keyboardHidden"/>
+        <activity
+            android:name=".ui.activity.PointDetailActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".ui.activity.InviteFriendActivity"
+                  android:theme="@style/AppTheme"/>
 
         <receiver
             android:name=".app.DinoAdminReceiver"
@@ -48,18 +65,17 @@
                 android:resource="@xml/admin"/>
 
             <intent-filter>
-                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED"/>
             </intent-filter>
         </receiver>
 
         <service android:name=".app.LockScreenService"/>
 
-        <activity android:name="com.facebook.FacebookActivity"
-                  android:configChanges=
-                      "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-                  android:theme="@android:style/Theme.Translucent.NoTitleBar"
-                  android:label="@string/app_name" />
-
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
     </application>
 
 </manifest>

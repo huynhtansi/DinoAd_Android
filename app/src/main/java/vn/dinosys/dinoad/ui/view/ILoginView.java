@@ -6,4 +6,10 @@ package vn.dinosys.dinoad.ui.view;
  * Project: DinoAd
  */
 public interface ILoginView {
+
+    void showLoginSuccess();
+
+    void showLoginFail();
+
+    void showError(String message);
 }

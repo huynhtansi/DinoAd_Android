@@ -215,7 +215,7 @@ public class LockScreenFragment extends BaseFragment implements ILockScreenView 
                 } else {*/
                     Glide.with(getContext()).load(Constants.BASE_URL + Constants.IMG_PREFIX + banner.getImgFileName()).into(bannerView);
                 //}
-
+                Log.d(TAG, "Video Id: " + videoId);
                 bannerView.setOnClickListener(pView -> startActivity(YoutubePlayerActivity.createIntent(getContext(), videoId)));
 
                 return bannerView;

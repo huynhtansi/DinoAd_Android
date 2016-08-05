@@ -39,6 +39,7 @@ public class LoginContainerFragment extends BaseFragment {
     @Override
     protected void onScreenVisible() {
         super.onScreenVisible();
+
         setupUI();
     }
 

@@ -54,11 +54,13 @@ public class BaseActivity extends AppCompatActivity {
         FacebookSdk.sdkInitialize(getApplicationContext());
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         setupActivityComponent();
-        if (hostFragment() != null) {
+
+        BaseFragment hostFragment = hostFragment();
+        if (hostFragment != null) {
             setContentView(R.layout.activity_base);
         }
-        if (savedInstanceState == null && hostFragment() != null) {
-            addFragment(hostFragment());
+        if (savedInstanceState == null && hostFragment != null) {
+            addFragment(hostFragment);
         }
     }
 

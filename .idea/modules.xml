@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/DAOGenerator/DAOGenerator.iml" filepath="$PROJECT_DIR$/DAOGenerator/DAOGenerator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/daogenerator/DAOGenerator.iml" filepath="$PROJECT_DIR$/daogenerator/DAOGenerator.iml" />
       <module fileurl="file://$PROJECT_DIR$/DinoAd.iml" filepath="$PROJECT_DIR$/DinoAd.iml" />
       <module fileurl="file://$PROJECT_DIR$/DinoAd_Android.iml" filepath="$PROJECT_DIR$/DinoAd_Android.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />

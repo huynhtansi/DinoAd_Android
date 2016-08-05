@@ -14,13 +14,16 @@ import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
+import vn.dinosys.dinoad.R;
 import vn.dinosys.dinoad.app.Constants;
+import vn.dinosys.dinoad.app.Runtime;
 import vn.dinosys.dinoad.data.database.migration.DbUpgradeHelper;
 import vn.dinosys.dinoad.data.database.table.dao.DaoMaster;
 import vn.dinosys.dinoad.data.database.table.dao.DaoSession;
 import vn.dinosys.dinoad.data.net.repository.banner.BannerRepository;
 import vn.dinosys.dinoad.data.net.repository.banner.IBannerRepository;
 import vn.dinosys.dinoad.data.net.service.banner.BannerService;
+import vn.dinosys.dinoad.util.security.ObscuredSharedPreferences;
 
 /**
  * Created by htsi.
@@ -39,6 +42,20 @@ public class AppModule {
     @Provides
     @Singleton
     Context provideApplicationContext() { return mApplication;}
+
+    @Provides
+    @Singleton
+    ObscuredSharedPreferences provideObscuredSharedPreferences() {
+        return new ObscuredSharedPreferences(this.mApplication,
+                mApplication.getSharedPreferences(this.mApplication.getString(R.string.app_name), Context.MODE_PRIVATE));
+    }
+
+    @Provides
+    @Singleton
+    Runtime provideRuntime(ObscuredSharedPreferences pSharedPreferences) {
+        Log.d("TAG", "create runtime");
+        return new Runtime(pSharedPreferences);
+    }
 
     @Provides
     @Singleton

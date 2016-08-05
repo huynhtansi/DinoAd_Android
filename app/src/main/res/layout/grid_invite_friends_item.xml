@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/default_margin_normal">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:clickable="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <vn.dinosys.dinoad.ui.widget.TintableImageView
+        android:id="@+id/ivShareIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:tint="@color/selector_color_share"
+        android:duplicateParentState="true"
+        android:src="@drawable/ic_facebook_round"/>
+
+    <TextView
+        android:id="@+id/textShareName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin_normal"
+        android:textColor="@color/text_color_normal"
+        android:duplicateParentState="true"
+        android:text="Facebook"/>
+</LinearLayout>
+</FrameLayout>

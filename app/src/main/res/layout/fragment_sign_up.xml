@@ -23,8 +23,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/username_hint"
-                android:nextFocusDown="@+id/editPassword"
-                android:imeOptions="actionNext"
                 android:singleLine="true"/>
 
         </android.support.design.widget.TextInputLayout>
@@ -42,9 +40,7 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/password_hint"
                 android:singleLine="true"
-                android:inputType="textPassword"
-                android:imeOptions="actionNext"
-                android:nextFocusDown="@+id/editRetype"/>
+                android:inputType="textPassword"/>
 
         </android.support.design.widget.TextInputLayout>
 
@@ -61,9 +57,7 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/retype_password"
                 android:singleLine="true"
-                android:inputType="textPassword"
-                android:imeOptions="actionDone"
-                android:nextFocusDown="@+id/btnRegister"/>
+                android:inputType="textPassword"/>
 
         </android.support.design.widget.TextInputLayout>
 
@@ -96,10 +90,10 @@
                 android:id="@+id/btnLoginFaceBook"
                 android:layout_width="64dp"
                 android:layout_height="64dp"
-                android:background="@drawable/round_button_primary"
+                android:background="@drawable/round_button_accent"
                 android:text="f"
-                android:textColor="@color/colorPrimary"
                 android:textSize="20sp"
+                android:textColor="@color/colorAccent"
                 android:textAllCaps="false"
                 android:layout_margin="8dp"
                 fontPath="fonts/MYRIADPRO-SEMIBOLD.OTF"
@@ -109,10 +103,10 @@
                 android:id="@+id/btnLoginGPlus"
                 android:layout_width="64dp"
                 android:layout_height="64dp"
-                android:background="@drawable/round_button_accent"
+                android:background="@drawable/round_button_primary"
                 android:text="G+"
                 android:textSize="20sp"
-                android:textColor="@color/colorAccent"
+                android:textColor="@color/colorPrimary"
                 fontPath="fonts/MYRIADPRO-SEMIBOLD.OTF"
                 />
         </LinearLayout>

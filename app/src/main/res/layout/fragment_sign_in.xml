@@ -22,8 +22,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/username_hint"
-                android:nextFocusDown="@+id/editPassword"
-                android:imeOptions="actionNext"
                 android:singleLine="true"/>
 
         </android.support.design.widget.TextInputLayout>
@@ -41,9 +39,7 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/password_hint"
                 android:singleLine="true"
-                android:inputType="textPassword"
-                android:imeOptions="actionDone"
-                android:nextFocusDown="@+id/btnSignIn"/>
+                android:inputType="textPassword"/>
 
         </android.support.design.widget.TextInputLayout>
 

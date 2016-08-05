@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    android:paddingLeft="@dimen/default_margin_normal"
+    android:paddingRight="@dimen/default_margin_normal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textCouponCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin_small"
+        android:layout_marginBottom="@dimen/default_margin_small"/>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="@dimen/default_margin_small"
+        android:divider="#EEEEEE"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="true"
+        android:background="@color/white"/>
+</LinearLayout>

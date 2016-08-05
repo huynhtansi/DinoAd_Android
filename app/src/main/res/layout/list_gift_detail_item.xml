@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="@dimen/default_margin_normal">
+
+    <ImageView
+        android:id="@+id/ivGiftCard"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="@dimen/default_margin_normal"
+        android:src="@drawable/card_mobifone"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textGiftCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobifone 20,000 VND"
+            android:textSize="@dimen/font_size_large"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/textGiftCardPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20,000 đ"/>
+    </LinearLayout>
+</LinearLayout>

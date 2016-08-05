@@ -81,7 +81,7 @@ android {
 
 ext {
     // Android Support AppCompat
-    supportLibVersion = '24.0.0'
+    supportLibVersion = '24.1.1'
     // Butter Knife
     butterknifeLibVersion = '8.1.0'
     // Fonts Support
@@ -113,6 +113,7 @@ dependencies {
     compile "com.android.support:support-v4:${supportLibVersion}"
     compile "com.android.support:cardview-v7:${supportLibVersion}"
     compile "com.android.support:recyclerview-v7:${supportLibVersion}"
+    compile "com.android.support:preference-v14:${supportLibVersion}"
     // Butter Knife
     compile "com.jakewharton:butterknife:${butterknifeLibVersion}"
     apt "com.jakewharton:butterknife-compiler:${butterknifeLibVersion}"
@@ -124,6 +125,7 @@ dependencies {
 
     // Google Sign-In
     compile "com.google.android.gms:play-services-auth:${playServiceLibVersion}"
+    compile "com.google.android.gms:play-services:${playServiceLibVersion}"
 
     // Dependence Injection
     compile "com.google.dagger:dagger-compiler:${daggerLibVersion}"

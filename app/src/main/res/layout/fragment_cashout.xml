@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/default_margin_normal">
+
+    <FrameLayout
+        android:id="@+id/flPrepaidCard"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#0091EA">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Thẻ điện thoại"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_large"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/flGameCard"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="@dimen/default_margin_normal"
+        android:background="#CDDC39">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Thẻ game"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_large"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/flVoucher"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="@dimen/default_margin_normal"
+        android:background="#FFA726">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/voucher"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_large"/>
+    </FrameLayout>
+</LinearLayout>

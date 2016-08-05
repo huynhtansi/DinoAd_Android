@@ -6,13 +6,15 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay.v14.Material</item>
     </style>
 
     <style name="HomeTheme" parent="AppTheme">
         <item name="android:windowTranslucentStatus">true</item>
     </style>
-
-
 
     <style name="LockScreenTheme" parent="Theme.AppCompat.NoActionBar">
         <item name="android:windowIsTranslucent">true</item>
@@ -26,4 +28,13 @@
         <item name="android:windowFullscreen">true</item>
     </style>
 
+    <style name="font_SEMIBOLD">
+        <item name="fontPath">fonts/MYRIADPRO-SEMIBOLD.OTF</item>
+    </style>
+    <style name="font_SEMIBOLDCOND">
+        <item name="fontPath">fonts/MYRIADPRO-SEMIBOLDCOND_1.OTF</item>
+    </style>
+    <style name="font_BOLDSEMICN">
+        <item name="fontPath">fonts/MYRIADPRO-BOLDSEMICN_0.OTF</item>
+    </style>
 </resources>

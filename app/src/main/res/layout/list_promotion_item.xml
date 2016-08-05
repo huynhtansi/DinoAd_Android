@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/default_margin_normal"
+    android:paddingEnd="@dimen/default_margin_normal"
+    android:paddingTop="@dimen/default_margin_small"
+    android:paddingBottom="@dimen/default_margin_small"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/ivPromotion"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/app1"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/default_margin_normal"
+            android:layout_gravity="center">
+            <TextView
+                android:id="@+id/textPromotionName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ticket Name"
+                android:textSize="@dimen/font_size_large"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/textPromotionDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_small"
+                android:text="Install and run"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textPromotionPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="500 đ"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/font_size_large"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"/>
+</RelativeLayout>

@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="red">#FF0000</color>
+    <color name="green">#00FF00</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="alpha_white">#46FFFFFF</color>
+    <color name="lightGrey">#80808080</color>
+
     <color name="colorPrimary">#FF5722</color>
+    <color name="colorPrimaryAlpha">#80FF5722</color>
     <color name="colorPrimaryDark">#E64A19</color>
     <color name="colorAccent">#01579B</color>
+    <color name="colorAccentAlpha">#8001579B</color>
+    <color name="bgChildColor">#EEEEEE</color>
 </resources>
